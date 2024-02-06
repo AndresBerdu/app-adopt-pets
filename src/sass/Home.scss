@@ -1,0 +1,7 @@
+@use './variables' as v;
+
+.donations__container{
+    background-color: v.$color2;
+    font-family: 'Hammersmith One', sans-serif;
+    color: v.$color6;
+}
