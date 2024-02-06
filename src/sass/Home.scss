@@ -1,7 +1,89 @@
 @use './variables' as v;
 
-.donations__container{
+.donations{
     background-color: v.$color2;
-    font-family: 'Hammersmith One', sans-serif;
     color: v.$color6;
+    display: flex;
+    align-items: center;
+
+    &__container{
+        padding: 100px;
+        text-align: center;
+    }
+
+    &__title{
+        font-family: 'Hammersmith One', sans-serif;
+        font-size: 30px;
+    }
+
+    &__text{
+        text-align: justify;
+        font-size: 25px;
+        font-family: 'Jost', sans-serif;
+        margin-block: 80px;
+        padding-inline: 100px;
+    }
+
+    &__button{
+        font-family: 'Hammersmith One', sans-serif;
+        text-decoration: none;
+        background-color: v.$color4;
+        color: v.$color6;
+        padding: 20px;
+        border-radius: 20px;
+        align-items: center;
+        display: flex;
+        margin: 0px;
+    }
+
+    img{
+        border-radius: 20px 0px 0px 20px;
+    }
+}
+
+.abaut{
+    font-family: 'Hammersmith One', sans-serif;
+    margin: 100px;
+
+    &__titlePrincipal{
+        text-align: center;
+        color: v.$color3;
+    }
+
+    &__img{
+        max-width: 15%;
+        min-width: 5%;
+    }
+
+    &__container{
+        display: flex;
+        margin-block: 150px;
+    }
+
+    &__title{
+        color: v.$color5;
+        padding: 0px 100px 0px 140px;
+    }
+
+    &__text{
+        padding: 0px 100px 0px 140px;
+        font-size: 20px;
+        margin-block: 20px;
+        text-align: justify;
+    }
+}
+
+.footer{
+    background-color: v.$color1;
+    color: v.$color6;
+    display: flex;
+    padding: 40px;
+
+    &__container{
+
+    }
+
+    &__imgQR{
+        max-width: 15%;
+    }
 }
