@@ -1,0 +1,50 @@
+@use './variables' as v;
+
+.footer{
+    background-color: v.$color1;
+    color: v.$color6;
+    display: flex;
+    padding: 40px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    min-width: 300px;
+
+    &__container{
+        margin-inline: 70px;
+    }
+
+    &__primaryTitle{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__abaut{
+        margin: 10px;
+        width: 250px;
+        text-align: justify;
+        margin-block: 40px;
+    }
+
+    &__redSocials{
+        text-align: center;
+    }
+
+    &__icons{
+        margin-inline: 10px;
+    }
+
+    &__dates{
+        display: flex;
+        align-items: center;
+        margin-block: 20px;
+    }
+
+    &__textDonations{
+        text-align: justify;
+        padding-block: 30px;
+    }
+
+    &__imgQR{
+        max-width: 30%;
+    }
+}

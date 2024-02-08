@@ -5,6 +5,7 @@
     color: v.$color6;
     display: flex;
     align-items: center;
+    min-width: 300px;
 
     &__container{
         padding: 100px;
@@ -29,11 +30,14 @@
         text-decoration: none;
         background-color: v.$color4;
         color: v.$color6;
-        padding: 20px;
-        border-radius: 20px;
+        display: inline-flex;
         align-items: center;
-        display: flex;
-        margin: 0px;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    &__buttonImagen{
+        margin-right: 8px;
     }
 
     img{
@@ -51,8 +55,11 @@
     }
 
     &__img{
-        max-width: 15%;
-        min-width: 5%;
+        width: 154px;
+        height: 149px;
+        min-width: 77px;
+        min-height: 74,5px;
+        background-size: cover;
     }
 
     &__container{
@@ -70,20 +77,6 @@
         font-size: 20px;
         margin-block: 20px;
         text-align: justify;
-    }
-}
-
-.footer{
-    background-color: v.$color1;
-    color: v.$color6;
-    display: flex;
-    padding: 40px;
-
-    &__container{
-
-    }
-
-    &__imgQR{
-        max-width: 15%;
+        color: v.$color7;
     }
 }

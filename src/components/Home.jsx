@@ -1,24 +1,18 @@
 import React from 'react'
 import { Sidebar } from '../interface/Sidebar';
 import { Slider } from '../interface/Slider';
+import { Footer } from '../interface/Footer';
 import { NavLink } from 'react-router-dom';
 import '../sass/Home.scss';
 
 //icons
 import creditCard from '../assets/creditCard.png';
-import facebookIcon from '../assets/facebookIcon.png';
-import instagramIcon from '../assets/instagramIcon.png';
-import snapchatIcon from '../assets/snapchatIcon.png';
-import whatsAppIcon from '../assets/whatsAppIcon.png';
-import messageIcon from '../assets/messageIcon.png';
-import phoneIcon from '../assets/phoneIcon.png';
 import flame from '../assets/flame.png';
 import eye from '../assets/eye.png';
 import book from '../assets/book.png';
 
 //images 
 const img1 = 'https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_noticia__small/public/noticias/mascota-autoestima-ninos.jpg';
-const qrImage = 'https://www.shutterstock.com/image-vector/qr-code-vector-square-icon-600nw-2143529405.jpg';
 
 const Home = () => {
   return (
@@ -35,10 +29,10 @@ const Home = () => {
                 We installation need donations for keep animals, fed and good conditions. 
                 Thanks for your  donationsand help pets, for search a new family.
               </p>
-              <NavLink end to='/Donations' className='donations__button'>
-                <img src={creditCard}/>
-                <p>Donations</p>  
-              </NavLink>
+                <NavLink className='donations__button' end to='/Donations'>
+                  <img className='donations__buttonImagen' src={creditCard}/>
+                  <p>Donations</p>  
+                </NavLink>
             </div>
             <div>
               <img src={img1} alt='Pets with owner' />
@@ -79,40 +73,7 @@ const Home = () => {
             </div>
           </div>
         </body>
-
-        <footer>
-          <div className='footer'>
-            <div className='footer__container'>
-              <h2>APP ADOPT PETS</h2>
-              <p>
-                Watch in the differents red socials and view the animals with dogs, 
-                cats and rabbits, ready for adopt and search a new family.
-              </p>
-              <img src={facebookIcon} alt="Facebook Red Social" />
-              <img src={instagramIcon} alt="Instagram Red Social" />
-              <img src={snapchatIcon} alt="Snapchat Red Social" />
-              <img src={whatsAppIcon} alt="whatsApp Nuber" />
-            </div>
-            <div className='footer__container'>
-              <h2>Contact Us</h2>
-              <div>
-                <div>
-                  <img src={messageIcon} alt="Adress Gmail" />
-                  <p>AppAdoptPets@gmail.com</p>
-                </div>
-                <div>
-                  <img src={phoneIcon} alt="Phone number" />
-                  <p>+57 340 41422344</p>
-                </div>
-              </div>
-            </div>
-            <div className='footer__container'>
-              <h2>Donations</h2>
-              <p>Our QR for donations and take you so much!</p>
-              <img className='footer__imgQR' src={qrImage} alt="QR APP ADOPT PETS" />
-            </div>
-          </div>
-        </footer>
+        <Footer/>
     </div>
   )
 }

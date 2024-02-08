@@ -1,14 +1,10 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
-const URI = 'mongodb://localhost/db-adopt-pets';
-
-mongoose.connect(URI, {
-    useNewUrlParse: true,
-    useCreateIndex: true,
-});
-
-const connection = mongoose.connection;
-
-connection.once('open', () => {
-    console.log('DB us connected');
-})
+export const conexion = async () => {
+    try {
+        await mongoose.connect('mongodb://localhost/appAdoptPetsdb');
+    } catch (e) {
+        
+    }
+    
+}
